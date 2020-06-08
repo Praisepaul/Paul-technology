@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title class="title" >Contact Us</title>
+    <link rel="stylesheet" href="paul.css" type="text/css">
+    <link rel="html" href="paul.html" type="text">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="contactus.css" type="text/css">
+</head>
+<body class="bg">
+    <header>
+        <div class="col-12 col-xl-4">
+            <h1 class="welcome">Paul's Technologies Pvt Ltd</h1>
+        </div>
+        <hr style="background: rgb(255, 255, 255); height: 1px;">
+
+        <div class="col-xl-1 col-1 my-auto ">
+<div class="navbar navbar-dark">
+    <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" style="transition-duration: 1.5s; transition-delay: 0.5s;" id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="paul.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="paul.html#about-sec">About Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+        
+      </div>
+    
+</div>
+  </div>
+ 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center; color: black;">Contact Us</h2>
+<p style="text-align: center; color: #ffffff;">Please fill in this form and we'll call you back within 48hours.</p>
+<div class="container">
+    <form action="/cgi/sendmail.pl" method="POST" enctype="text/plain">
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="country">Mobile</label>
+        </div>
+        <div class="col-75">
+         <input type="text" id="country" name="country" placeholder="Mobile" >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Message</label>
+        </div>
+        <div class="col-75"> 
+          <textarea id="subject" name="subject" placeholder="Enter Your Message.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  <hr style="background: #ffffff; height: 1px; width: 100%;">
+  <div class="col-12 row">
+    <div class="column" style="padding-left: 4rem; padding-top: 2rem;">
+  <p style="color: #ffffff; margin-bottom: 0;"> Phone:+91-8548071192</p>
+  <p style="color: #ffffff; margin-bottom: 0; padding-left: 3rem;">+91-9480852404</p>
+  <p style="color: #ffffff;  padding-left: 3rem;">+91-6235356161</p>
+  </div>
+      <div class="column" style="padding-left: 4rem; padding-top: 2rem;">
+        <p style="color: #ffffff; margin-bottom: 0em;">Email:praise20024christ@gmail.com</p>
+        <p style="color: #ffffff; margin-bottom: 0; padding-left: 3rem;">paul24christ@gmail.com</p>
+      </div>
+  </div>
+  <div class="footer">
+    <p style="text-align: center;color: #ffffff;"> © Copyrights Paul's Technologies Pvt Ltd 2020 </p>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
