@@ -7,7 +7,43 @@
     <link rel="stylesheet" href="paul.css" type="text/css">
     <link rel="html" href="index.html" type="text">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+<style>
+  .container-reviews{
+    width: 21rem;
+    height: 33rem;
+    border: 2px solid blue;
+    background-color: black;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    margin-left: 1rem;
+    box-shadow: white;
+  }
+  .container-reviews::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container-reviews img{
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  .container-reviews span{
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  @media (max-width: 500px){
+    .container-reviews{
+      text-align: center;
+    }
+    .container-reviews img{
+      margin: auto;
+      float: none;
+      display: block;
+    }
+  }
+</style>
 </head>
 <body class="bg">
     <header>
@@ -25,7 +61,7 @@
       <div class="collapse navbar-collapse" style="transition-duration: 1.5s; transition-delay: 0.5s;" id="navbarSupportedContent">
         <ul class="navbar-nav  ml-auto">
           <li class="nav-item active">
-            <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="index.html">Home <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="index.html#about-sec">About Us</a>
@@ -115,6 +151,18 @@
         
     </div>
   </section>
+  <center><h2 style="color: yellow;">Our Testimonials</h2></center>
+  <div class="container-reviews">
+    <img src="milus...jpg" alt="Avatar" style="width: 100px; height: 100px;border: 1rem ridge seagreen;">
+    <p style="margin-top: 2rem;color: white;"><span>&nbsp;&nbsp;&nbsp; Milan P Benny</span><br>Founder of MasterCrafts</p>
+    <p style="color: rgb(111, 228, 2); font-size: larger;">I contacted Paul Technologies to make a Logo for my Youtube Channel "Mastercrafts Kannada". Overall experience was fantastic. The piece of art had a professional touch in it. Even their support teams are also stunning. Our requirements are fulfilled within a span of time. Really appreciate their hardwork and proficiency.</p>
+  </div>
+  <div class="container-reviews" style="float: inherit; height: 36rem;">
+    <img src="1.jpg" alt="Avatar" style="width: 100px; height: 100px;border: 1rem ridge seagreen;">
+    <p style="margin-top: 2rem;color: white;"><span>&nbsp;&nbsp;&nbsp; Paulson V Augusthy</span><br>Founder of Charismatic Church Of God</p>
+    <p style="color: rgb(111, 228, 2);font-size: larger;">Myself Pr. Paulson Valookkaran Augusthy and I'm the Founder Pastor of Charismatic Church Of God,Byndoor. I approached Paul Technologies to design us a responsive website and sincerely we are fully satisfied with their service. Hats-off to the people who worked hard for us and helped us in fulfilling our requirements. I personally suggest this team for all our web-related needs.</p>
+  </div>
+  </header>
   <div class="footer">
         <p style="text-align: center;color: #ffffff;"> © Copyrights Paul's Technologies Pvt Ltd 2020 </p>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
