@@ -1,18 +1,4 @@
-<?php
 
-$email=$_POST['email'];
-$name=$_POST['name'];
-$country=$_POST['country'];
-$subject=$_POST['subject'];
-$data=$name.",".$email.",".$country.",".$subject;
-
-
-$file="file.csv";
-
-
-file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
-print "<h1>Thank you. Your message is sent!</h1>";
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +115,7 @@ input[type=submit]:hover {
 <h2 style="text-align: center; color: black;">Contact Us</h2>
 <p style="text-align: center; color: #ffffff;">Please fill in this form and we'll call you back within 48hours.</p>
 <div class="container">
-    <form action="" method="POST">
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdpv5Siek0aMw7ZIVvEfwR_opTaafsEbdsASK_L9JNKSIqUbQ/formResponse" method="POST">
       <div class="row">
         <div class="col-25">
           <label for="fname">First Name</label>
@@ -165,21 +151,6 @@ input[type=submit]:hover {
       <div class="row">
         <input type="submit" value="Submit">
       </div>
-<?php
-
-$email=$_POST['email'];
-$name=$_POST['name'];
-$country=$_POST['country'];
-$subject=$_POST['subject'];
-$data=$name.",".$email.",".$country.",".$subject;
-
-
-$file="file.csv";
-
-
-file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
-print "<h1 align=center>Thank you. Your message is sent!</h1>";
-?>
     </form>
   </div>
   <hr style="background: #ffffff; height: 1px; width: 100%;">
