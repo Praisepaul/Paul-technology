@@ -134,7 +134,7 @@ input[type=submit]:hover {
     <textarea rows="5" name="Message" class="form-control" placeholder="Your Message" value=""></textarea>
 </div>
   <div class="form-group">
-      <input type="submit" name="submit" class="btnSubmit btn-block" onclick="play() ; countDown()" value="Submit" />
+      <input type="submit" name="submit" class="btnSubmit btn-block" onclick="playAudio() ; countDown()" value="Submit" />
   </div>
 </form>
   </div>
@@ -154,15 +154,16 @@ input[type=submit]:hover {
   </div>
   <div class="footer">
     <p style="text-align: center;color: #ffffff;"> © Copyrights Paul's Technologies Pvt Ltd 2020 </p>
-  <script>
-    var audio = new Audio('AudioLabRecording_03-08-20_01-11-02-361.mp3');
-    audio.play();
-      autoplay = "1";
-    function play() {
-      var audio = new Audio('AudioLabRecording_03-08-20_01-11-02-361.mp3');
-      audio.play();
-    }
-  </script>
+ <audio id="myVoice">
+     <source src="AudioLabRecording_03-08-20_01-11-02-361.ogg" type="audio.ogg">
+     <source src="AudioLabRecording_03-08-20_01-11-02-361.mp3" type="audio/mpeg">
+      </audio>
+      <script>
+          var x = document.getElementById("myVoice");
+          function playAudio(){
+              x.play();
+          }
+      </script>
   <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbx3ryOEoyCWSOKrlDxzcWxuNybZ-DIVUX4u0VncUHIrlDO1fxg8/exec'
       const form = document.forms['google-sheet']
