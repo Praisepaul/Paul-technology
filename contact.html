@@ -159,7 +159,7 @@ input[type=submit]:hover {
      <source src="AudioLabRecording_03-08-20_01-11-02-361.mp3" type="audio/mpeg">
       </audio>
       <script>
-          var x = document.getElementById("myVoice");
+          var x = document.getElementById("myVoice").autoplay = false;
           function playAudio(){
               x.play();
           }
