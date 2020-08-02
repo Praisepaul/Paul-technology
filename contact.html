@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,7 +25,7 @@
       <div class="collapse navbar-collapse" style="transition-duration: 1.5s; transition-delay: 0.5s;" id="navbarSupportedContent">
         <ul class="navbar-nav  ml-auto">
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-white" href="index.html">Home <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="index.html#about-sec">About Us</a>
@@ -77,9 +76,15 @@ input[type=submit]:hover {
 }
 
 .container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
+  border-radius: 4px;
+  background: radial-gradient(#c52d2d, rgb(21, 21, 119));
   padding: 20px;
+  height: 30rem;
+  width: 25rem;
+}
+.form-group{
+  width: 20rem;
+  margin: 1.5rem;
 }
 
 .col-25 {
@@ -115,44 +120,26 @@ input[type=submit]:hover {
 <h2 style="text-align: center; color: black;">Contact Us</h2>
 <p style="text-align: center; color: #ffffff;">Please fill in this form and we'll call you back within 48hours.</p>
 <div class="container">
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdpv5Siek0aMw7ZIVvEfwR_opTaafsEbdsASK_L9JNKSIqUbQ/formResponse"target="_self" method="POST" id="mG61Hd" jsmodel="TOfxwf Q91hve" data-response="%.@.[]]" data-first-entry="0" data-last-entry="4" data-is-first-page="true">
-      <div class="row">
-        <div class="col-25">
-          <label for="fname">First Name</label>
-        </div>
-        <div class="col-75">
-          <input type="name" id="fname" jsname="XmnwAc" placeholder="Your name..">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="lname">Last Name</label>
-        </div>
-        <div class="col-75">
-          <input type="name" id="lname" jsname="YPqjbf" placeholder="Your last name..">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="country">Mobile</label>
-        </div>
-        <div class="col-75">
-         <input type="country" id="country" jsname="YPqjbf" placeholder="Mobile" >
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="subject">Message</label>
-        </div>
-        <div class="col-75"> 
-          <textarea id="subject" type="subject" jsname="YPqjbf" placeholder="Enter Your Message.." style="height:200px"></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
+  <form method="post" autocomplete="off" name="google-sheet">
+    <div class="form-group">
+      <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
   </div>
+  <div class="form-group">
+      <input type="text" name="Email" class="form-control" placeholder="Your Email *" value="" required=""/>
+  </div>
+  <div class="form-group">
+      <input type="text" name="Phone" class="form-control" placeholder="Your Contact Number *" value="" required=""/>
+  </div>
+  <div class="form-group">
+    <textarea rows="5" name="Message" class="form-control" placeholder="Your Message" value=""></textarea>
+</div>
+  <div class="form-group">
+      <input type="submit" name="submit" class="btnSubmit btn-block" onclick="play() ; countDown()" value="Submit" />
+  </div>
+</form>
+  </div>
+  <span style="color: #ffffff;" id="timer"></span>
+<br><br>
   <hr style="background: #ffffff; height: 1px; width: 100%;">
   <div class="col-12 row">
     <div class="column" style="padding-left: 4rem; padding-top: 2rem;">
@@ -167,7 +154,44 @@ input[type=submit]:hover {
   </div>
   <div class="footer">
     <p style="text-align: center;color: #ffffff;"> © Copyrights Paul's Technologies Pvt Ltd 2020 </p>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>
+    var audio = new Audio('AudioLabRecording_03-08-20_01-11-02-361.mp3');
+    audio.play();
+    function play() {
+      var audio = new Audio('AudioLabRecording_03-08-20_01-11-02-361.mp3');
+      audio.play();
+    }
+  </script>
+  <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbx3ryOEoyCWSOKrlDxzcWxuNybZ-DIVUX4u0VncUHIrlDO1fxg8/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => ("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+<script type="text/javascript">
+var count = 10;
+var redirect = "https://praisepaul.github.io/Paul-technology/index.html";
+function countDown(){
+  document.getElementById("timer");
+  if(count>0){
+    count--;
+    timer.innerHTML = "This page will be redirected soon. Please be patient!"  +count+ "seconds.";
+    setTimeout("countDown()", 1000);
+  
+  }else{
+    window.location.href = redirect;
+  }
+} 
+
+</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
