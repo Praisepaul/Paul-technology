@@ -76,8 +76,15 @@ input[type=submit]:hover {
 }
 
 .container {
-  margin-left: 450px;
+  display: block;
+  text-align: center;
 
+}
+.form{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 .form-group{
   width: 20rem;
@@ -117,7 +124,7 @@ input[type=submit]:hover {
 <h2 style="text-align: center; color: black;">Contact Us</h2>
 <p style="text-align: center; color: #ffffff;">Please fill in this form and we'll call you back within 48hours.</p>
 <div class="container">
-  <form method="post" autocomplete="off" name="google-sheet">
+  <form method="post" autocomplete="off" class="form" name="google-sheet">
     <div class="form-group">
       <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
   </div>
