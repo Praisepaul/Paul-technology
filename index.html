@@ -11,7 +11,12 @@
         body {font-family: Verdana, sans-serif; margin:0}
         .mySlides {display: none;}
   img {vertical-align: middle;}
-  
+   /* Slideshow container for mobile */
+  .slideshow-containermob {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
   /* Slideshow container */
   .slideshow-container {
     max-width: 100%;
@@ -111,6 +116,20 @@
       <span class="dot" onclick="currentSlide(2)"></span> 
       <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
+       <div class="d-block d-sm-none d-md-none d-lg-none d-xl-none slideshow-containermob">
+
+<div class="mySlides fade">
+  <img src="download.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="download.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="florian-olivo-1169465-unsplash-1.webp" style="width:100%">
+</div>
+</div>
     <script>
       var slideIndex = 0;
       showSlides();
