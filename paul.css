@@ -9,8 +9,14 @@
         margin-top: 3rem;
         }
     .bg{
-        background: radial-gradient(#c52d2d, rgb(21, 21, 119));
+        background: linear-gradient(rgba(224, 12, 76, 0.863),rgb(58, 58, 145));
         
+    }
+    .logo{
+        background:  rgba(202, 51, 177, 0.021);
+        margin-top: 2rem;
+        margin-bottom: 5px;
+        margin-left: 1rem;
     }
     .footer{
         background: black;
@@ -19,16 +25,17 @@
     }
    .nav-item a:hover{
        color: rgb(252, 1, 1);
-       background-color: rgb(231, 2, 201);
+       background-color: rgb(231, 151, 2);
    }
    .topnav {
     overflow: hidden;
-    background-color: rgb(17, 75, 233);
+    background-color: rgba(15, 7, 131, 0.89);
     z-index: 1;
     width: 100%;
     padding-top: 0.5rem;
    }
    .topnav a {
+       margin-left: 5rem;
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -38,6 +45,6 @@
     font-size: 17px;
   }
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: #ffffff;
     color: black;
   }
