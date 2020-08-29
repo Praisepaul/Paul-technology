@@ -6,6 +6,7 @@
     <title class="title" >Contact Us</title>
     <link rel="stylesheet" href="paul.css" type="text/css">
     <link rel="html" href="index.html" type="text">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="contactus.css" type="text/css">
 </head>
@@ -124,7 +125,7 @@ input[type=submit]:hover {
 <h2 style="text-align: center; color: black;">Contact Us</h2>
 <p style="text-align: center; color: #ffffff;">Please fill in this form and we'll call you back within 48hours.</p>
 <div class="container">
-  <form method="post" autocomplete="off" class="form" name="google-sheet">
+  <form class="form" id="submit-form" action="">
     <div class="form-group">
       <input type="text" name="Name" class="form-control" placeholder="Your Name *" value="" required=""/>
   </div>
@@ -200,5 +201,25 @@ function countDown(){
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+      <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbx3ryOEoyCWSOKrlDxzcWxuNybZ-DIVUX4u0VncUHIrlDO1fxg8/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Thank You. You have successfully submitted the form. We would love to have you with us!")
+                    //window.location.reload()
+                    window.location.href="https://www.paultechno.com/index.html"
+                },
+                error:function (err){
+                    alert("We encountered an Error")
+    
+                }
+            })
+        })
+    </script>
+
+      </body>
 </html>
