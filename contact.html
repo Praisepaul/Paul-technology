@@ -4,25 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="paul.css">
+    <link rel="html" href="index.html" type="text">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Document</title>
+    <title> Contact Us </title>
 </head>
-<body>
+<body class="bg">
+     <header>
+      <div class="logo col-12 col-xl-12">
+        <img style="width: 25rem; height: 9rem;" src="origial logo.jpg">
+    </div>
+        <hr style="background: rgb(255, 255, 255); height: 1px;">
+
+        <div class="col-xl-1 col-1 my-auto ">
+<div class="navbar navbar-dark">
+    <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" style="transition-duration: 1.5s; transition-delay: 0.5s;" id="navbarSupportedContent">
+        <ul class="navbar-nav  ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html#about-sec">About Us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="service.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+        
+      </div>
+    
+</div>
+  </div>
+    </header>
+    <h2 style="text-align: center; color: black;">Contact Us</h2>
+    <p style="text-align: center; color: #ffffff;">Please fill in this form and we'll call you back within 48hours.</p>
     <div class="container">
           <div class="column">
             <form id="submit-form" class="form" action="">
+                <div class="form-group">
               <label for="fname">First Name</label>
               <input type="text" id="fname" name="name" placeholder="Your name..">
               <label for="lname">Email</label>
               <input type="text" id="lname" name="email" placeholder="Your last name..">
-              <label for="country">Country</label>
-              <select id="country" name="color">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" placeholder="Phone">
               <label for="subject">Subject</label>
               <textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea>
+                </div>
               <input type="submit" value="Submit">
             </form>
           </div>
@@ -31,6 +65,26 @@
           </div>
         </div>
       </div>
+    <br><br>
+  <hr style="background: #ffffff; height: 1px; width: 100%;">
+  <div class="col-12 row">
+    <div class="column" style="padding-left: 4rem; padding-top: 2rem;">
+  <p style="color: #ffffff; margin-bottom: 0;"> Phone:+91-8548071192</p>
+  <p style="color: #ffffff; margin-bottom: 0; padding-left: 3rem;">+91-9480852404</p>
+  <p style="color: #ffffff;  padding-left: 3rem;">+91-6235356161</p>
+  </div>
+      <div class="column" style="padding-left: 4rem; padding-top: 2rem;">
+        <p style="color: #ffffff; margin-bottom: 0em;">Email:praise20024christ@gmail.com</p>
+        <p style="color: #ffffff; margin-bottom: 0; padding-left: 3rem;">paul24christ@gmail.com</p>
+      </div>
+  </div>
+  <div class="footer">
+    <p style="text-align: center;color: #ffffff;"> © Copyrights Paul Technologies Byndoor 2020 </p>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
       <script>
         $("#submit-form").submit((e)=>{
             e.preventDefault()
