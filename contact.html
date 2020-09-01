@@ -2,164 +2,174 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="paul.css">
-    <link rel="html" href="index.html" type="text">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=0.95 ">
+    <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title> Contact Us </title>
+    <link rel="stylesheet" href="paul.css" type="text/css">
+    <link rel="html" href="index.html" type="text">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="contactus.css" type="text/css">
+    <title>Document</title>
     <style>
-* {
-  box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  display: block;
-  text-align: center;
-
-}
-.form{
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-.form-group{
-  width: 20rem;
-  margin: 1.5rem;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-</style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          resize: vertical;
+        }
+        
+        label {
+          padding: 12px 12px 12px 0;
+          display: inline-block;
+        }
+        
+        input[type=submit]{
+          background-color: #4CAF50;
+          color: white;
+          padding: 12px 20px ;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          float: right;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        .container {
+          display: block;
+          text-align: center;
+        
+        }
+        .form{
+          display: inline-block;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: left;
+        }
+        .form-group{
+          width: 20rem;
+          margin: 1rem;
+        } 
+        .col-25 {
+          float: left;
+          width: 25%;
+          margin-top: 6px;
+        }
+        
+        .col-75 {
+          float: left;
+          width: 75%;
+          margin-top: 6px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .col-25, .col-75, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+        .bg{
+        background: linear-gradient(rgba(224, 12, 76, 0.863),rgb(58, 58, 145));
+        width:100%
+        
+    }
+        </style>
+        
 </head>
 <body class="bg">
-     <header>
-      <div class="logo col-12 col-xl-12">
-        <img style="width: 25rem; height: 9rem;" src="origial logo.jpg">
-    </div>
-        <hr style="background: rgb(255, 255, 255); height: 1px;">
-
-        <div class="col-xl-1 col-1 my-auto ">
-<div class="navbar navbar-dark">
-    <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" style="transition-duration: 1.5s; transition-delay: 0.5s;" id="navbarSupportedContent">
-        <ul class="navbar-nav  ml-auto">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="index.html">Home <span class="sr-only"></span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="index.html#about-sec">About Us</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link text-white" href="service.html">Services</a>
+    <header>
+        <div class="logo col-12 col-xl-12">
+          <img style="width: 15rem; height: 9rem;" src="circle-cropped.png">
+      </div>
+          <hr style="background: rgb(255, 255, 255); height: 1px;">
+  
+          <div class="col-xl-1 col-1 my-auto ">
+  <div class="navbar navbar-dark">
+      <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" style="transition-duration: 1.5s; transition-delay: 0.5s;" id="navbarSupportedContent">
+          <ul class="navbar-nav  ml-auto">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home <span class="sr-only"></span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="contact.html">Contact Us</a>
+              <a class="nav-link text-white" href="index.html#about-sec">About Us</a>
             </li>
-        </ul>
-        
-      </div>
-    
-</div>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contact.html">Contact Us</a>
+              </li>
+          </ul>
+          
+        </div>
+      
   </div>
-    </header>
+    </div>
     <h2 style="text-align: center; color: black;">Contact Us</h2>
-    <p style="text-align: center; color: #ffffff;">Please fill in this form and we'll call you back within 48hours.</p>
+<p style="text-align: center; color: #ffffff;">Please fill in this form and we'll call you back within 48hours.</p>
     <div class="container">
             <form id="submit-form" class="form" action="">
                 <div class="form-group">
-              <label for="fname">First Name</label><br>
-              <input type="text" id="fname" name="name" placeholder="Your name.."><br>
-              <label for="lname">Email</label><br>
-              <input type="text" id="lname" name="email" placeholder="Your last name.."><br>
-              <label for="phone">Phone Number</label><br>
-              <input type="text" id="phone" name="phone" placeholder="Phone"><br>
-              <label for="subject">Subject</label><br>
-              <textarea id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea><br>
+              <label style="color: white;" for="fname">Name:</label><br>
+              <input class="form-group" type="text" id="fname" name="name" placeholder="Your name.."><br>
                 </div>
-              <input type="submit" class="btnSubmit btn-block" value="Submit">
+                <div class="form-group">
+              <label style="color: white;" for="phone">Mobile:</label><br>
+              <input class="form-group" type="text" placeholder="Your Mobile Number" id="phone" name="mobile"><br>
+              </div>
+              <div class="form-group">
+              <label style="color: white;" for="email">Email:</label><br>
+              <input class="form-group" type="text" placeholder="Your Email Id " id="email" name="email"><br>
+              </div>
+              <div class="form-group">
+              <label style="color: white;" for="subject">Subject</label><br>
+              <textarea class="form-group message" id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea><br>
+              </div>
+              <div class="form-group">
+              <input class="btnSubmit btn-block" type="submit" value="Submit">
+              </div>
             </form>
-        </div>
-    <br><br>
+          </div>
+          <br><br>
   <hr style="background: #ffffff; height: 1px; width: 100%;">
   <div class="col-12 row">
-    <div class="column" style="padding-left: 4rem; padding-top: 2rem;">
+    &nbsp;<div class="column" style=" margin: 0;">
   <p style="color: #ffffff; margin-bottom: 0;"> Phone:+91-8548071192</p>
   <p style="color: #ffffff; margin-bottom: 0; padding-left: 3rem;">+91-9480852404</p>
   <p style="color: #ffffff;  padding-left: 3rem;">+91-6235356161</p>
-  </div>
-      <div class="column" style="padding-left: 4rem; padding-top: 2rem;">
-        <p style="color: #ffffff; margin-bottom: 0em;">Email:praise20024christ@gmail.com</p>
+    </div>
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<div class="column" style="margin:0">
+        <p style="color: #ffffff; margin-bottom: 0em;">Email: praise20024christ@gmail.com</p>
         <p style="color: #ffffff; margin-bottom: 0; padding-left: 3rem;">paul24christ@gmail.com</p>
-      </div>
-  </div>
+    </div>    
+</div>
   <div class="footer">
-    <p style="text-align: center;color: #ffffff;"> © Copyrights Paul Technologies Byndoor 2020 </p>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <p style="text-align: center;color: #ffffff; background: black;"> © Copyrights Paul Technologies Byndoor 2020 </p>
       <script>
         $("#submit-form").submit((e)=>{
             e.preventDefault()
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycby8xI0GZSapWe8OEYhGrqyijEHtGgdvjh430rwPcWSI-vIkxxk/exec",
+                url:"https://script.google.com/macros/s/AKfycbx3ryOEoyCWSOKrlDxzcWxuNybZ-DIVUX4u0VncUHIrlDO1fxg8/exec",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){
@@ -174,5 +184,7 @@ input[type=submit]:hover {
             })
         })
     </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
