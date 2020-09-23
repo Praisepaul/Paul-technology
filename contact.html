@@ -9,6 +9,7 @@
     <link rel="html" href="index.html" type="text">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="contactus.css" type="text/css">
     <title>Document</title>
     <style>
@@ -56,7 +57,7 @@
         }
         .form-group{
           width: 20rem;
-          margin: 1rem;
+        
         } 
         .col-25 {
           float: left;
@@ -85,24 +86,47 @@
           }
         }
         .bg{
-        background: linear-gradient(rgba(224, 12, 76, 0.863),rgb(58, 58, 145));
+        background: linear-gradient(rgb(167, 133, 194),#ffffff,rgb(0, 0, 85));
         width:100%
         
     }
+    .phone {
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+    color: white;
+}
+.whatsapp{
+  position: absolute;
+    right: 20px;
+    bottom: 150px;
+    color: white;
+}
+.sms{
+  position: absolute;
+    right: 20px;
+    bottom: 10px;
+    color: white;
+}
         </style>
         
 </head>
 <body class="bg">
     <header>
-        <div class="logo col-12 col-xl-12">
-          <img style="width: 15rem; height: 9rem;" src="circle-cropped.png">
-      </div>
+      <div style="position: fixed;background: fixed,rgb(58, 58, 145);z-index: 1; width: 100%;height: 22%;">
+      <div class="logo col-12 col-xl-12 d-none d-md-none d-lg-block">
+        <img style="width: 10rem; height: 9rem; float: left;" src="circle-cropped.png"><div style="color: rgb(255, 255, 255);"><br><br><h1>Paul Technologies</h1></div>
+    </div>
+    <div class="logo col-12 col-xl-12 d-block d-md-block d-lg-none d-xl-none">
+      <img style="width: 8rem; height: 5rem; float: left;" src="circle-cropped.png"><div style="color: rgb(255, 255, 255);"><br><br><h4>Paul Technologies</h4></div>
+  </div>
           <hr style="background: rgb(255, 255, 255); height: 1px;">
-  
+</div>
+    </header>
           <div class="col-xl-1 col-1 my-auto ">
-  <div class="navbar navbar-dark">
-      <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+  <div style="top: 13rem;" class="navbar navbar-dark">
+      <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(61, 0, 58);">
+          <span  class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" style="transition-duration: 1.5s; transition-delay: 0.5s;" id="navbarSupportedContent">
@@ -125,44 +149,54 @@
       
   </div>
     </div>
-    <h2 style="text-align: center; color: black;">Contact Us</h2>
-<p style="text-align: center; color: #ffffff;">Please fill in this form and we'll call you back within 48hours.</p>
+    <h2 style="text-align: center; color: black;margin-top: 13rem;"> Contact Us</h2>
+    <p style="text-align: center; color: #ffffff;font-size: large;">Please fill in this form and we'll call you back within 48hours.</p>
     <div class="container">
             <form id="submit-form" class="form" action="">
                 <div class="form-group">
-              <label style="color: white;" for="fname">Name:</label><br>
-              <input class="form-group" type="text" id="fname" name="name" placeholder="Your name.."><br>
+              <label style="color: rgb(0, 0, 0);" for="fname">Name:</label><br>
+              <input style="border: 1px solid red;" class="form-group" type="text" id="fname" name="name" placeholder="Your name.."><br>
                 </div>
                 <div class="form-group">
-              <label style="color: white;" for="phone">Mobile:</label><br>
-              <input class="form-group" type="text" placeholder="Your Mobile Number" id="phone" name="mobile"><br>
+              <label style="color: rgb(0, 0, 0);" for="phone">Mobile:</label><br>
+              <input style="border: 1px solid red;" class="form-group" type="text" placeholder="Your Mobile Number" id="phone" name="mobile"><br>
               </div>
               <div class="form-group">
-              <label style="color: white;" for="email">Email:</label><br>
-              <input class="form-group" type="text" placeholder="Your Email Id " id="email" name="email"><br>
+              <label style="color: rgb(0, 0, 0);" for="email">Email:</label><br>
+              <input style="border: 1px solid red;" class="form-group" type="text" placeholder="Your Email Id " id="email" name="email"><br>
               </div>
               <div class="form-group">
-              <label style="color: white;" for="subject">Subject</label><br>
-              <textarea class="form-group message" id="subject" name="message" placeholder="Write something.." style="height:170px"></textarea><br>
+              <label style="color: rgb(0, 0, 0);" for="subject">Message:</label><br>
+              <textarea cols="50" rows="5" style="border: solid 2px blue;" class="form-group message" id="subject" name="message" placeholder="Write something.."></textarea><br>
               </div>
               <div class="form-group">
               <input class="btnSubmit btn-block" type="submit" value="Submit">
               </div>
             </form>
-          </div>
+          </div><br>
+          <a title="Whatsapp" href="https://wa.me/919480852404?text=Hi%20there!%20I%20found%20you%20on%20on%20the%20web%20and%20needed%20some%20help.%20Please%20contact%20me"><button class="whatsapp" style="position: fixed; color: green;border-radius: 50%;float: right;cursor: pointer;margin-bottom: 1.5rem; border: solid 1px green;"><i class="fa fa-3x fa-whatsapp"></i></button></a>
+         <br><br><a title="Phone" href="tel: +91-701-993-6011"><button class="phone" style="position: fixed; height: 50px;width: 60px; border: solid blue 1px; border-radius: 50%;float: right;cursor: pointer;margin-bottom: 1.5rem;"><i class="fa fa-3x fa-phone"></i></a></button>          
+         <br><a title="SMS" href="sms://+917019936011?&body=Hi%20there!%20I%20found%20you%20on%20on%20the%20web%20and%20needed%20some%20help.%20Please%20contact%20me"><button class="sms" style="position: fixed; height: 50px;width: 60px;border-radius: 50%;float: right;cursor: pointer;margin-bottom: 1.5rem;color: red; border: solid 1px red;"><i class="fa fa-2x fa-envelope"></i></button></a> 
+         <center><iframe class="d-block d-lg-none d-xl-none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248079.98070742402!2d74.72966309187679!3d13.703321119499103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc61dfec7480b9%3A0x8c0595a7afd7b29f!2sPaul%20Technologies%20Byndoor!5e0!3m2!1sen!2sin!4v1600850437069!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="true" aria-hidden="false" tabindex="0"></iframe></center>
+          <iframe class="d-none d-md-none d-lg-block" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d248079.98072801039!2d74.7296631!3d13.7033211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbc61dfec7480b9%3A0x8c0595a7afd7b29f!2sPaul%20Technologies%20Byndoor!5e0!3m2!1sen!2sin!4v1600851320427!5m2!1sen!2sin" width="1340" height="700" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           <br><br>
   <hr style="background: #ffffff; height: 1px; width: 100%;">
   <div class="col-12 row">
-    &nbsp;<div class="column" style=" margin: 0;">
+    &nbsp;<div class="column" style="margin-left: 5rem;">
   <p style="color: #ffffff; margin-bottom: 0;"> Phone:+91-8548071192</p>
   <p style="color: #ffffff; margin-bottom: 0; padding-left: 3rem;">+91-9480852404</p>
   <p style="color: #ffffff;  padding-left: 3rem;">+91-6235356161</p>
     </div>
-    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<div class="column" style="margin:0">
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<div class="column" style="margin-left: 5rem;">
         <p style="color: #ffffff; margin-bottom: 0em;">Email: praise20024christ@gmail.com</p>
         <p style="color: #ffffff; margin-bottom: 0; padding-left: 3rem;">paul24christ@gmail.com</p>
     </div>    
+    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<div class="column" style="margin-left: 5rem;">
+      <p style="color: #ffffff; margin-bottom: 0em;">Address: Ganganadu, Byndoor</p>
+      <p style="color: #ffffff; margin-bottom: 0; padding-left: 4rem;">Udupi Dist, Karnataka <br>India-576214</p>
+  </div>    
 </div>
+
   <div class="footer">
     <p style="text-align: center;color: #ffffff; background: black;"> © Copyrights Paul Technologies Byndoor 2020 </p>
       <script>

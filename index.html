@@ -12,12 +12,6 @@
         body {font-family: Verdana, sans-serif; margin:0}
         .mySlides {display: none;}
   img {vertical-align: middle;}
-   /* Slideshow container for mobile */
-  .slideshow-containermob {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
   /* Slideshow container */
   .slideshow-container {
     max-width: 100%;
@@ -86,18 +80,22 @@
 </head>
 <body class="bg">
     <header>
-        <div class="logo col-12 col-xl-12">
-            <img style="width: 15rem; height: 9rem;" src="circle-cropped.png">
-        </div>
+      <div class="logo col-12 col-xl-12 d-none d-md-none d-lg-block">
+        <img style="width: 10rem; height: 9rem; float: left;" src="circle-cropped.png"><div style="color: rgb(255, 255, 255);"><br><br><h1>Paul Technologies</h1></div>
+    </div>
+    <div class="logo col-12 col-xl-12 d-block d-md-block d-lg-none d-xl-none">
+      <img style="width: 4rem; height: 3rem; float: left;" src="circle-cropped.png"><div style="color: rgb(255, 255, 255);"><br><br><h2>Paul Technologies</h2></div>
+  </div>
+        <hr style="background: rgb(255, 255, 255); height: 1px;">
         <div class="topnav d-none d-lg-block">
           <a  href="index.html">Home</a>
           <a href="#about-sec">About Us</a>
           <a href="service.html">Services</a>
           <a href="contact.html">Contact Us</a>
         </div>
-        <hr style="background: rgb(255, 255, 255); height: 1px; ">
+        
 <div class="col-10 col-xl-12">
-  <div class="d-none d-md-none d-lg-block d-xl-block slideshow-container">
+  <div class="d-block d-md-block d-lg-block d-xl-block slideshow-container slideshow-containermob">
         <div class="mySlides fade">
           <img src="download.jpg" style="width:100%">
         </div>
@@ -117,18 +115,6 @@
       <span class="dot" onclick="currentSlide(2)"></span> 
       <span class="dot" onclick="currentSlide(3)"></span> 
     </div>
-       <div class="d-lg-none d-xl-none slideshow-container">
-
-<div class="mySlides fade">
-  <img src="download.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="download.png" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="florian-olivo-1169465-unsplash-1.webp" style="width:100%">
 </div>
 </div>
     <script>
@@ -152,11 +138,10 @@
         setTimeout(showSlides, 4500); // Change image every 2 seconds
       }
       </script>
-    </div>
-    <hr style="background: rgb(255, 255, 255); height: 1px;">
+    
   <div class="col-xl-1 col-1 my-auto ">
     <div class="navbar navbar-dark">
-        <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgb(61, 0, 58);">
             <span class="navbar-toggler-icon"></span>
           </button>
         
@@ -210,7 +195,7 @@
 
     </header>
     <div class="footer">
-        <p style="text-align: center;color: #ffffff;"> © Copyrights Paul's Technologies Pvt Ltd 2020 </p>
+        <p style="text-align: center;color: #ffffff;"> © Copyrights Paul's Technologies 2020 </p>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
